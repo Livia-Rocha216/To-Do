@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TASKS</title>
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">   
 </head>
+
 <body>
     <h1>Minhas Tarefas</h1>
     <input type="text" id="taskInput">
     <button id="taskBtn">Adicionar Tarefa</button>
     <ul id="taskList">
-        <li>Lavar Louça</li>
+        <li>
+            <span class="completed">Lavar Louça</span>
+            <button>Excluir</button>
+        </li>
     </ul>
 </body>
 </html>

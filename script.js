@@ -6,6 +6,9 @@ const taskInput = document.querySelector("#taskInput") // Seleciona o Input de T
 function createSpan(taskInputValue){ // Função que cria automaticamente spans de forma separada;
     const span = document.createElement('span');
     span.textContent = taskInputValue;
+    span.addEventListener("click", function(){
+        span.classList.toggle('completed');
+    });
     return span;
 }
 
